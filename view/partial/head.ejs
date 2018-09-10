@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="<%= site.description %>" />
+  <title><%= site.title %></title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/preview.css">
+  <script src="ejs/ejs.js"></script>
+  <script src="js/app.js"></script>
+</head>
+<body>
+  <header>
+
+    <%- include nav-main.ejs %>
+
+    <h1>EVAL-Gestion De Stocks- BIZ-Online</h1>
+    <div id="form_utils">
+        <div id="form_btns">
+          <button id="btn_get_user" class="btn">get user</button>
+          <button id="btn_del_user" class="btn">delete user(s)</button>
+        </div>
+        <form id="form_user" method="POST">
+          <h3 class="title">
+            <span id="user_info">Create new user</span>
+          </h3>
+          <input type="hidden" id="produit_id"><br>
+          <input type="text" id="produit_name" value="coucou"><br>
+          <br>
+          <input type="text" id="produit_marque" value="coucou"><br>
+          <br>
+          <input type="email"  id="produit_prix" value="cou@cou.cou"><br>
+          <br>
+
+          <button id="btn_new_user" class="btn">Create</button><br>
+          <br>
+          <button id="btn_edit_user" class="btn is-hidden">edit</button>
+        </form>
+
+      </div>
+      <br>
+<table id="t01">
+  <tr>
+    <th>🅸🅳</th>
+    <th>🅽🅾🅼</th>
+    <th>🅼🅰🆁🆀🆄🅴</th>
+    <th>🅳🅴🆂🅲🆁🅸🅿🆃🅸🅾🅽</th>
+    <th>🅿🆁🅸🆇</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Iphone</td>
+    <td>Apple</td>
+    <td>6s plus</td>
+    <td>600 $</td>
+
+</tr>
+  <tr>
+    <td>2</td>
+    <td>Smartphone</td>
+    <td>Samsung</td>
+    <td>5 Edge</td>
+    <td>400 $</td
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Smartphone</td>
+    <td>Asus</td>
+    <td>Ignore</td>
+    <td>800 $</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Smartphone</td>
+    <td>LG</td>
+    <td>Bit s</td>
+    <td>430 $</td>
+  </tr>
+   <tr>
+     <td>5</td>
+     <td>Smart
+     <td>HP</td>
+     <td>Unit a</td>
+     <td>740 $</td>
+</table>
+</header>

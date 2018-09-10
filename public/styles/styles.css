@@ -1,0 +1,42 @@
+*{box-sizing:border-box}
+
+body{font-family: 'Josefin Sans', sans-serif;
+
+ }
+
+ h1 {
+  width: 100%;
+   text-align: center;
+ }
+ table, td, th {
+     border: 1px solid #ddd;
+     text-align: left;
+ }
+
+ table#t01{
+     border-collapse: collapse;
+     width: 80%;
+     background: #D3D3D3;
+     margin: auto;
+ }
+
+ th, td {
+     padding: 15px;
+ }
+
+ #form_utils {
+   text-align: center;
+ }
+ #btn {
+  cursor: pointer;
+  border: 1px solid silver;
+  border-radius: .4rem;
+  padding: 10px;
+}
+#btn:hover {
+  background: darkorange;
+  color: white;
+}
+#is-hidden {
+  display: none;
+}
